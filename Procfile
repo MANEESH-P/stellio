@@ -1,1 +1,1 @@
-web: gunicorn stellio.wsgi --log-file -
+web: gunicorn music.wsgi --log-file -
