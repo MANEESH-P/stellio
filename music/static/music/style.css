@@ -1,0 +1,40 @@
+body{
+  background-color: white;
+}
+
+.navbar{
+  border-radius:0;
+}
+.navbar-brand{
+  font-family:'Satisfy', cursive;
+}
+#features
+{
+  text-align:left;
+
+}
+#features img{
+  margin: 0 0 20px;
+
+
+
+}
+.thumbnail{
+  background-color: #ccc;
+}
+.thumbnail img{
+  width:300px;
+  height:300px;
+}
+.panel
+{
+  background-color:#ccc;
+}
+.nav-pills
+{
+  background-color: #bbb;
+}
+#all-songs
+{
+  background-color: #ccc;
+}

@@ -1,0 +1,28 @@
+{% extends 'music/base.html' %}
+{% block title %}All Songs{% endblock %}
+{% block body %}
+<div class="container-fluid ">
+  <h2 class="well">All Songs</h2>
+  <table class="table" id="all-songs">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Album</th>
+        <th>Audio Format</th>
+      </tr>
+
+        {% for song in all_songs %}
+        <tr>
+          <td>{{song.song_title}}</td>
+          <td>{{song.album}}</td>
+          <td>{{song.file_type}}</td>
+        </tr>
+        {% endfor %}
+
+
+    </thead>
+  </table>
+
+
+</div>
+{% endblock %}

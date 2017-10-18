@@ -1,0 +1,21 @@
+{% extends 'music/base.html' %}
+{% block head %}
+<title>Profile</title>
+{% endblock %}
+{% block body %}
+<div class="container-fluid">
+  <h1>Profile</h1>
+  <h4>Username : {{ user }}</h4>
+  <img src="{{ user.userprofile.image.url }}" alt="" width="240">
+  <h4>First Name : {{ user.first_name }}</h4>
+  <h4>Last Name : {{ user.last_name }}</h4>
+  <h4>Email : {{user.email}}</h4>
+  <h4>Description :{{ user.userprofile.description }}</h4>
+  <h4>City : {{user.userprofile.city }}</h4>
+  <h4>Phone : {{user.userprofile.phone }}</h4>
+
+
+
+</div>
+
+{% endblock %}
