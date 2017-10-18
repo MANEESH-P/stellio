@@ -137,7 +137,15 @@ MEDIA_URL = '/media/'
 
 EMAIL_HOST = 'localhost'
 EMAIL_PORT = 1025
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
 
 db_from_env = dj_database_url.config()
 DATABASES['default'].update(db_from_env)
